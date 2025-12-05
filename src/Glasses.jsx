@@ -8,9 +8,9 @@ import * as THREE from "three";
 import { useGLTF } from "@react-three/drei";
 import BowlMaterial from "./materials/BowlMaterial";
 const PRIMARY_LIGHT_POS = new THREE.Vector3(0.319, 7.495, -0.902);
-
+const MODEL_PATH = `${import.meta.env.BASE_URL}Glasses.glb`;
 function Glasses(props) {
-  const { nodes, materials } = useGLTF("/Glasses.glb");
+  const { nodes, materials } = useGLTF(MODEL_PATH);
   return (
     <group {...props} dispose={null}>
       <mesh
@@ -28,6 +28,6 @@ function Glasses(props) {
   );
 }
 
-useGLTF.preload("/Glasses.glb");
+useGLTF.preload(MODEL_PATH);
 
 export default Glasses;
