@@ -1,0 +1,104 @@
+.randomizer__title {
+  display: flex;
+  text-align: center;
+  margin: 15px auto;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .randomizer__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  margin: 0px auto;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.randomizer__button:hover {
+  background-color: #3b28cc;
+  color: #fff;
+  cursor: pointer;
+} */
+
+.randomizer__button:focus {
+  outline: none;
+}
+
+.randomizer__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  border-radius: 20px;
+  margin: 25px auto;
+  padding: 25px;
+  gap: 15px;
+  max-width: 200px;
+  width: 200px;
+  height: 100px;
+}
+
+.randomizer__slot {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin: 0px;
+  padding: 15px;
+  background-color: #fff;
+  border: 1px solid #000;
+}
+
+.randomizer__number {
+  position: relative;
+  display: flex;
+  color: #000;
+  background-color: none;
+  margin: 0px auto;
+  padding: 10px;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  transition: all 0.5s ease;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.randomizer__number_spin {
+  animation: spin-animation 0.25s ease infinite;
+}
+
+@keyframes spin-animation {
+  0% {
+    top: 0px;
+    opacity: 1;
+  }
+  20% {
+    top: 25px;
+  }
+  40% {
+    top: 50px;
+    opacity: 0;
+  }
+  60% {
+    top: -80px;
+    opacity: 0;
+  }
+  80% {
+    top: -50px;
+  }
+  90% {
+    top: -25px;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}

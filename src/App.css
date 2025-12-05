@@ -1,0 +1,52 @@
+#root {
+  margin: 0px;
+  /* padding: 2rem; */
+  padding: 0px;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  /* background-color: #0a101c; */
+  color: #fff;
+  transition: all 0.75s ease;
+  overflow: hidden;
+}
+
+#root.light {
+  background-color: #fff;
+  color: #0a101c;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  margin: 0px auto;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  outline: none;
+  z-index: 99;
+}
+
+.button:hover {
+  background-color: #3b28cc;
+  color: #fff;
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button_light {
+  color: #fff;
+  background-color: #3b28cc;
+}
+
+.button_light:hover {
+  background-color: #b8e2fa;
+  color: #000;
+}

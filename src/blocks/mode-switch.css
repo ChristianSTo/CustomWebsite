@@ -1,0 +1,23 @@
+/* .mode-switch__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  margin: 0px auto;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.mode-switch__button:hover {
+  background-color: #3b28cc;
+  color: #fff;
+  cursor: pointer;
+}
+
+.mode-switch__button:focus {
+  outline: none;
+} */

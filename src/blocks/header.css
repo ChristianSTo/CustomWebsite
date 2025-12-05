@@ -1,0 +1,94 @@
+.header__container {
+  position: absolute;
+  top: 100px;
+  right: 0px;
+  left: 0px;
+  z-index: 200;
+}
+
+.header__name {
+  font-family: "Trebuchet MS", "sans-serif";
+  font-size: 24px;
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  color: #000;
+}
+
+.header__title {
+  font-size: 58px;
+  margin-top: 100px;
+}
+
+.header__subtitle {
+  font-family: "Trebuchet MS", "sans-serif";
+  font-size: 24px;
+}
+
+.header__start-button {
+  font-family: "Trebuchet MS", "sans-serif";
+  font-size: 24px;
+  padding-bottom: 5px;
+  border: none;
+  background: none;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.header__start-button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.header__selections {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px auto 0px;
+  gap: 25px;
+}
+
+.header__button {
+  font-family: "Trebuchet MS", "sans-serif";
+  font-size: 24px;
+  padding-bottom: 5px;
+  border: none;
+  background: none;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.header__button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.header__cta {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+  margin-top: 150px;
+}
+
+.header__cta-text {
+  font-family: "Trebuchet MS", "sans-serif";
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+}
+.header__cta-icon {
+  font-family: "Trebuchet MS", "sans-serif";
+  font-size: 50px;
+  margin: 0px;
+  padding: 0px;
+  animation: floating 0.3s alternate infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
+}

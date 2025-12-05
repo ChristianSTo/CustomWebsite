@@ -1,0 +1,40 @@
+.backgrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 25px;
+  margin: 0px;
+}
+
+.backgrid:hover {
+  cursor: pointer;
+  /* cursor: url("../assets/images/chopsticks.svg"), auto; */
+}
+
+.backgrid__title {
+  margin: 25px auto;
+}
+
+.backgrid__container {
+  margin: 0px auto;
+  padding: 0px;
+}
+
+.backgrid__parts {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 0px;
+  margin: 0 auto;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}

@@ -1,0 +1,44 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.grid__title {
+  margin: 25px auto;
+}
+
+.grid__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-template-rows: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto 75px;
+  padding: 0px;
+  max-width: 100%;
+  width: 100%;
+  gap: 15px 10px;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+.grid__card {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
+  padding: 0px;
+  width: 200px;
+  gap: 15px 10px;
+  margin: 0 auto;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}

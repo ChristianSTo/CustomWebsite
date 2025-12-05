@@ -1,0 +1,36 @@
+.nav__container {
+  position: fixed;
+  display: flex;
+  top: 0px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 100%;
+  z-index: 999;
+}
+
+.nav__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1rem;
+  font-style: none;
+  text-decoration: none;
+  color: #000;
+  background-color: #fff;
+  border: 3px solid #fff;
+  border-radius: 20px;
+  width: 200px;
+  height: 50px;
+  margin: 0px;
+  padding: 25px;
+  transition: all 0.3s ease;
+}
+
+.nav__button:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #000;
+}
