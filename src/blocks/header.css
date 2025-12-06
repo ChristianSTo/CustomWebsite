@@ -13,6 +13,7 @@
   bottom: 10px;
   right: 25px;
   color: #000;
+  mix-blend-mode: difference;
 }
 
 .header__title {
@@ -94,6 +95,17 @@
   margin: 0px;
   padding: 0px;
   animation: floating 0.3s alternate infinite;
+}
+
+@media screen and (max-width: 650px) {
+  .header__name {
+    font-size: 16px;
+    right: 10px;
+  }
+
+  .header__cta {
+    margin-top: 125px;
+  }
 }
 
 @keyframes floating {

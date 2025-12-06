@@ -25,16 +25,16 @@ function Header({
   }, [isMoving]);
   return (
     <div className="header__container">
-      <p className="header__name">By Christian To</p>
+      <p className="header__name">© Christian To</p>
       {isEntered ? (
         <div className="header__hero">
           {isArtwork ? (
             <h1 className="header__title" style={headerStyle}>
-              Artwork.
+              Designs.
             </h1>
           ) : isWebsites ? (
             <h1 className="header__title" style={headerStyle}>
-              Websites & Tech.
+              Websites.
             </h1>
           ) : isAbout ? (
             <h1 className="header__title" style={headerStyle}>
@@ -71,7 +71,7 @@ function Header({
                 Websites
               </button>
               <button className="header__button" onClick={artworkHandler}>
-                Artwork
+                Designs
               </button>
               <button className="header__button" onClick={aboutHandler}>
                 About

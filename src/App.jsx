@@ -127,11 +127,6 @@ function App() {
     // Initial Coords
     setTimeout(() => {
       setIsMoving(false);
-      setIsEntered(false);
-      setIsMenu(false);
-      setIsWebsites(false);
-      setIsArtwork(false);
-      setIsAbout(false);
       setControlsEnabled(true);
     }, TRANSITION_DURATION * 1000);
 
@@ -140,6 +135,11 @@ function App() {
     const camPos = [-0.847, 8.823, 0.886];
     const target = [-0.758, 0.033, 0.881];
     animateCameraTo(camPos, target);
+    setIsEntered(false);
+    setIsMenu(false);
+    setIsWebsites(false);
+    setIsArtwork(false);
+    setIsAbout(false);
   };
   return (
     <div className="app space">
