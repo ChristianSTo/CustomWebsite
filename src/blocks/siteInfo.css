@@ -19,7 +19,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 75px;
+  gap: 35px;
 }
 
 .site-info__image {
@@ -57,9 +57,10 @@
   text-decoration: underline;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 750px) {
   .site-info__box {
     flex-direction: column;
+    gap: 5px;
   }
 
   .site-info__container {
