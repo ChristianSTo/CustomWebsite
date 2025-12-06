@@ -14,7 +14,7 @@ function Circle({ circleImage, order, number }) {
     if (circleRef.current) {
       const computedStyle = window.getComputedStyle(circleRef.current);
       const orderValue = computedStyle.getPropertyValue("order");
-      console.log("The computed order is:", orderValue);
+      // console.log("The computed order is:", orderValue);
       if (orderValue === "0") {
         console.log(circleRef.current);
         setCircleStyle({

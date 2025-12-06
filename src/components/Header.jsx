@@ -7,24 +7,25 @@ function Header({
   resetHandler,
   artworkHandler,
   websitesHandler,
+  aboutHandler,
+  isMenu,
   isWebsites,
   isArtwork,
+  isAbout,
+  isMoving,
 }) {
-  const [headerStyle, setHeaderStyle] = useState({ color: "" });
+  const [headerStyle, setHeaderStyle] = useState({ opacity: "1" });
+
   useEffect(() => {
-    if (isEntered) {
-      setHeaderStyle({ color: "#fff" });
-    } else if (!isEntered) {
-      setHeaderStyle({ color: "#000" });
+    if (!isMoving) {
+      setHeaderStyle({ opacity: "1" });
+    } else {
+      setHeaderStyle({ opacity: "0" });
     }
-    if (isWebsites || isArtwork) {
-      setHeaderStyle({ color: "#000" });
-    }
-  }, [isEntered, isWebsites, isArtwork]);
+  }, [isMoving]);
   return (
-    // <div className="header space">
     <div className="header__container">
-      <p className="header__name">Christian To</p>
+      <p className="header__name">By Christian To</p>
       {isEntered ? (
         <div className="header__hero">
           {isArtwork ? (
@@ -35,30 +36,50 @@ function Header({
             <h1 className="header__title" style={headerStyle}>
               Websites & Tech.
             </h1>
-          ) : (
+          ) : isAbout ? (
             <h1 className="header__title" style={headerStyle}>
+              About.
+            </h1>
+          ) : (
+            <h1 className="header__title header__menu" style={headerStyle}>
               Projects.
             </h1>
           )}
-
-          <button
-            className="header__start-button"
-            style={headerStyle}
-            onClick={resetHandler}
-          >
-            Back to Start →
-          </button>
-          <div className="header__selections">
-            <button className="header__button" onClick={websitesHandler}>
-              Websites
+          {isMenu ? (
+            <button
+              className="header__start-button header__start-button_menu"
+              style={headerStyle}
+              onClick={resetHandler}
+            >
+              Back to Start →
             </button>
-            <button className="header__button" onClick={artworkHandler}>
-              Artwork
+          ) : (
+            <button
+              className="header__start-button"
+              style={headerStyle}
+              onClick={resetHandler}
+            >
+              Back to Start →
             </button>
-            <button className="header__button">About </button>
-          </div>
+          )}
 
-          {isArtwork || isWebsites ? (
+          {isMoving ? (
+            <></>
+          ) : (
+            <div className="header__selections">
+              <button className="header__button" onClick={websitesHandler}>
+                Websites
+              </button>
+              <button className="header__button" onClick={artworkHandler}>
+                Artwork
+              </button>
+              <button className="header__button" onClick={aboutHandler}>
+                About
+              </button>
+            </div>
+          )}
+
+          {isArtwork || isWebsites || isAbout ? (
             <div className="header__cta" style={headerStyle}>
               <p className="header__cta-text">explore below</p>
               <p className="header__cta-icon">﹀</p>

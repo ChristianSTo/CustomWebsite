@@ -25,14 +25,14 @@ function RecipeList() {
       link: "https://christiansto.github.io/ChristianSTo-se-final-project/",
     },
     {
-      image: parksSparks,
-      name: "Parks Sparks (Code Jam)",
-      link: "https://rpinkha.github.io/June-Code-Jam-2024/",
-    },
-    {
       image: helpingHands,
       name: "Project Helping Hands (Code Jam)",
       link: "https://christiansto.github.io/CTo-November-Code-Jam-2024/",
+    },
+    {
+      image: parksSparks,
+      name: "Parks Sparks (Code Jam)",
+      link: "https://rpinkha.github.io/June-Code-Jam-2024/",
     },
   ];
 
