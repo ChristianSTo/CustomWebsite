@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import "../blocks/recipeListGrid.css";
 import Recipe from "./Recipe";
 import maison from "../assets/images/MaisonBezalel.png";
-import chicagoNews from "../assets/images/chicagoNews.svg";
+import chicagoNews from "../assets/images/chicagoNews.png";
 import parksSparks from "../assets/images/parksSparks.png";
 import helpingHands from "../assets/images/helpingHands.png";
 import communiteeGolf from "../assets/images/communiteeGolf.png";
