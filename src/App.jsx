@@ -10,7 +10,13 @@ import Grid from "./components/Grid";
 import Header from "./components/Header";
 import Glasses from "./Glasses";
 import ControlLogger from "./ControlLogger"; // Import the new logger
-
+import education from "./assets/images/education.png";
+import skills from "./assets/images/skills.png";
+import hobbies from "./assets/images/hobbies.png";
+import passions from "./assets/images/passions.png";
+import liliLogo from "./assets/images/LILIHonorsLogo.png";
+import shirtMerch from "./assets/images/AnimeClubChosenDesign.jpg";
+import catCareIcon from "./assets/images/CatCareIcon.png";
 let TRANSITION_DURATION = 1.5;
 function App() {
   const controlsRef = useRef();
@@ -21,7 +27,17 @@ function App() {
   const [isArtwork, setIsArtwork] = useState(false);
   const [isAbout, setIsAbout] = useState(false);
   const [isMoving, setIsMoving] = useState(false);
-
+  const cardDataAbout = [
+    { name: "Skills", src: skills },
+    { name: "Education", src: education },
+    { name: "Passions", src: passions },
+    { name: "Hobbies", src: hobbies },
+  ];
+  const cardDataDesigns = [
+    { name: `"Live It Learn It" Logo Design`, src: liliLogo },
+    { name: "Animation Club Merch Design", src: shirtMerch },
+    { name: "Cat Care Indie Game Design", src: catCareIcon },
+  ];
   const animateCameraTo = (newCamPos, newTarget) => {
     if (!controlsRef.current) return;
 
@@ -62,7 +78,7 @@ function App() {
   };
   const cameraToMenu = () => {
     setIsMoving(true);
-    TRANSITION_DURATION = 1.5;
+    TRANSITION_DURATION = 0.75;
     setControlsEnabled(false);
     // Coords for Menu View
     const camPos = [0, 0, 5];
@@ -77,7 +93,7 @@ function App() {
   const cameraToWebsites = () => {
     setIsMoving(true);
 
-    TRANSITION_DURATION = 1.5;
+    TRANSITION_DURATION = 1;
     const camPos = [2.527, -2.907, 5.2];
     const target = [0.128, -0.167, 0.126];
     animateCameraTo(camPos, target);
@@ -91,7 +107,7 @@ function App() {
   };
   const cameraToArtwork = () => {
     setIsMoving(true);
-    TRANSITION_DURATION = 2;
+    TRANSITION_DURATION = 1;
     const camPos = [6.488, -1.978, 1.991];
     const target = [0.149, 0.035, -0.025];
     animateCameraTo(camPos, target);
@@ -105,7 +121,7 @@ function App() {
   };
   const cameraToAbout = () => {
     setIsMoving(true);
-    TRANSITION_DURATION = 1.5;
+    TRANSITION_DURATION = 1;
     // const camPos = [0.178, 6.805, -0.315];
     // const target = [0.194, 0.038, 0.272];
     // const camPos = [-0.847, 8.823, 0.886];
@@ -202,9 +218,16 @@ cameraX: "1.646", cameraY: "-1.386", cameraZ: "5.756", targetX: "0.149", targetY
           <ControlLogger orbitRef={controlsRef} />
         </Canvas>
       </div>{" "}
-      {isArtwork ? <CircleCarousel /> : <></>}
+      {isArtwork ? (
+        <>
+          <CircleCarousel />
+          <Grid cardData={cardDataDesigns} />
+        </>
+      ) : (
+        <></>
+      )}
       {isWebsites ? <Hero /> : <></>}
-      {isAbout ? <Grid /> : <></>}
+      {isAbout ? <Grid cardData={cardDataAbout} /> : <></>}
     </div>
   );
 }

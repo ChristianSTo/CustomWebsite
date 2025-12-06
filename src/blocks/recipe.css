@@ -1,4 +1,5 @@
 .recipe__item {
+  position: relative;
   font-family: "Trebuchet MS", "sans-serif";
   font-size: 24px;
   color: #000;
@@ -12,6 +13,7 @@
   padding: 0px;
   box-sizing: border-box;
   background-color: #fff;
+  border: none;
   border-radius: 15px;
   text-decoration: none;
   list-style: none;

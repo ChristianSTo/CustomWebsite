@@ -1,0 +1,72 @@
+.site-info__container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  margin: 0px auto;
+  padding: 75px;
+  z-index: 250;
+}
+
+.site-info__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 75px;
+}
+
+.site-info__image {
+  max-width: 300px;
+}
+
+.site-info__description {
+  font-family: "Trebuchet MS", "sans-serif";
+  font-size: 16px;
+  text-align: left;
+  white-space: pre-wrap;
+  color: #000;
+  max-width: 350px;
+  min-width: 350px;
+}
+
+.site-info__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.site-info__button {
+  font-family: "Trebuchet MS", "sans-serif";
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  background: none;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.site-info__button:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 650px) {
+  .site-info__box {
+    flex-direction: column;
+  }
+
+  .site-info__container {
+    padding: 25px;
+  }
+
+  .site-info__description {
+    min-width: 0px;
+  }
+}

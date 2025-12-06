@@ -1,16 +1,37 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../blocks/recipe.css";
+import SiteInfo from "./SiteInfo";
+function Recipe({ recipeImage, recipeName, recipeLink, recipeDescription }) {
+  const [openInfo, setOpenInfo] = useState(false);
 
-function Recipe({ recipeImage, recipeName, recipeLink }) {
+  const toggleSiteInfo = () => {
+    if (!openInfo) {
+      setOpenInfo(true);
+    } else {
+      setOpenInfo(false);
+    }
+  };
+
   return (
-    <a className="recipe__item" href={recipeLink} target="blank_">
-      <img
-        className="recipe-list__image"
-        src={recipeImage}
-        alt={recipeName}
-      ></img>
-      <p className="recipe-list__title">{recipeName} </p>
-    </a>
+    <>
+      <button className="recipe__item" onClick={toggleSiteInfo}>
+        <img
+          className="recipe-list__image"
+          src={recipeImage}
+          alt={recipeName}
+        ></img>
+        <p className="recipe-list__title">{recipeName} </p>
+      </button>
+      {openInfo && (
+        <SiteInfo
+          recipeImage={recipeImage}
+          recipeName={recipeName}
+          recipeLink={recipeLink}
+          recipeDescription={recipeDescription}
+          toggleSiteInfo={toggleSiteInfo}
+        />
+      )}
+    </>
   );
 }
 

@@ -55,9 +55,9 @@ function Card({ cardName, cardImage }) {
     const scroll = () => {
       // render cards when scrolled between 200 and 1500 px away from the top of the window
       if (!isHover) {
-        if (window.scrollY > 200 && window.scrollY <= 1500) {
+        if (window.scrollY > 200) {
           setIsScroll(true);
-        } else {
+        } else if (window.scrollY <= 200) {
           setIsScroll(false);
         }
       }

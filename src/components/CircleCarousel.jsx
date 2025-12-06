@@ -10,7 +10,6 @@ import muShu from "../assets/images/muShu.png";
 import mussels from "../assets/images/mussels.png";
 import onigiri from "../assets/images/onigiri.png";
 import pancakes from "../assets/images/pancakes.png";
-import pizza from "../assets/images/pizza.png";
 import shrimpCocktail from "../assets/images/shrimpCocktail.png";
 import springRolls from "../assets/images/springRolls.png";
 import steak from "../assets/images/steak.png";
@@ -18,7 +17,6 @@ import tofu from "../assets/images/tofu.png";
 import udon from "../assets/images/udon.png";
 
 function CircleCarousel() {
-  //   const circles = new Array(31).fill(null);
   const circles = [
     { name: avacadoToast },
     { name: burger },
@@ -29,7 +27,6 @@ function CircleCarousel() {
     { name: mussels },
     { name: onigiri },
     { name: pancakes },
-    // { name: pizza },
     { name: shrimpCocktail },
     { name: springRolls },
     { name: steak },
@@ -45,15 +42,7 @@ function CircleCarousel() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const handleWheel = (event) => {
-    // Determine scroll direction
-    // if (event.deltaY > 0) {
     setActiveIndex((prevIndex) => (prevIndex + 1) % totalCircles);
-    // }
-    // else {
-    //   setActiveIndex(
-    //     (prevIndex) => (prevIndex - 1 + totalCircles) % totalCircles
-    //   );
-    // }
   };
 
   useEffect(() => {
