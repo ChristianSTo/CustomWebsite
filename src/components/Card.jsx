@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../blocks/card.css";
 
-function Card({ cardName, cardImage }) {
+function Card({ cardName, cardImage, cardLink, cardDescription, cardFigma }) {
   const cardRef = useRef(null);
   const [isHover, setIsHover] = useState(false);
   const [isClicked, setIsClicked] = useState(false);
@@ -28,9 +28,15 @@ function Card({ cardName, cardImage }) {
       setIsClicked(true);
 
       setCardStyle({
-        top: `33.33%`,
-        left: `50%`,
-        transform: `translateX(-50%) scale(2)`,
+        // top: `33.33%`,
+        // left: `50%`,
+        width: "100%",
+        maxHeight: "100vh",
+        top: "0",
+        bottom: "0",
+        right: "0",
+        left: "0",
+        transform: ` scale(1)`,
       });
 
       setIsClickable(false);
@@ -124,8 +130,38 @@ function Card({ cardName, cardImage }) {
         onClick={cardClick}
         style={cardStyle}
       >
-        <p className="card__name">{cardName}</p>
-        <img className="card__image" src={cardImage} alt={cardName}></img>
+        {isClicked ? (
+          <div className="card__container">
+            <p className="card__name">{cardName}</p>
+            <img className="card__image" src={cardImage} alt={cardName}></img>
+            <p className="card__description">{cardDescription}</p>
+            <div className="card__nav-container">
+              {cardLink ? (
+                <a className="card__nav" href={cardLink} target="_blank">
+                  See Project ➔
+                </a>
+              ) : (
+                <></>
+              )}
+              {cardFigma ? (
+                <a className="card__nav" href={cardFigma} target="_blank">
+                  See Figma ➔
+                </a>
+              ) : (
+                <></>
+              )}
+              <button className="card__nav" onClick={cardClose}>
+                Back ↺
+              </button>
+            </div>
+          </div>
+        ) : (
+          <>
+            {" "}
+            <p className="card__name">{cardName}</p>
+            <img className="card__image" src={cardImage} alt={cardName}></img>
+          </>
+        )}
       </div>
       <div
         className={`card__overlay ${isClicked ? "active" : ""}`}

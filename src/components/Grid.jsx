@@ -8,7 +8,13 @@ function Grid({ cardData }) {
       <ul className="grid__container space">
         {cardData.map((card, index) => (
           <li key={index} className="grid__card">
-            <Card cardName={card.name} cardImage={card.src} />
+            <Card
+              cardName={card.name}
+              cardImage={card.src}
+              cardLink={card.link}
+              cardDescription={card.description}
+              cardFigma={card.figma}
+            />
           </li>
         ))}
       </ul>

@@ -10,6 +10,7 @@
   margin: 0px auto;
   opacity: 1;
   transition: all 0.3s ease, opacity 1s ease;
+  box-sizing: border-box;
   overflow: hidden;
 }
 
@@ -19,17 +20,29 @@
 
 .card.active {
   position: fixed;
-  background-color: #1c1c1c;
+  background-color: #fff;
   /* background-color: #fff; */
   z-index: 999;
+  margin: 0px auto;
   padding: 20px;
   animation: flip-animation 0.3s ease-out;
   cursor: default;
   opacity: 1;
   border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.card__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 }
 
 .card__name {
+  font-family: "Trebuchet MS", "sans-serif";
+  font-size: 16px;
   color: #000;
   background-color: #fff;
   transition: all 0.3s ease;
@@ -44,6 +57,16 @@
   /* max-height: 150px; */
   border-radius: 5px;
   margin: auto 0px;
+}
+
+.card__description {
+  font-family: "Trebuchet MS", "sans-serif";
+  font-size: 16px;
+  text-align: left;
+  max-width: 450px;
+  color: #000;
+  box-sizing: border-box;
+  white-space: pre-wrap;
 }
 
 .card__overlay {
@@ -73,17 +96,47 @@
   transform: scale(1);
 }
 
+.card__nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.card__nav {
+  font-family: "Trebuchet MS", "sans-serif";
+  font-size: 16px;
+  color: #000;
+  border: none;
+  background: none;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.card__nav {
+  text-decoration: underline;
+}
+
+@media screen and (max-width = 600px) {
+  .card.active {
+  }
+}
+
 @keyframes flip-animation {
   0% {
-    transform: rotateY(0deg) scaleX(1) scale(1);
+    transform: rotateY(0deg);
+    /* transform: rotateY(0deg) scaleX(1) scale(1); */
   }
 
   50% {
-    transform: rotateY(90deg) scaleX(0) scale(1.5);
+    transform: rotateY(90deg);
+    /* transform: rotateY(90deg) scaleX(0) scale(1.5); */
   }
 
   100% {
-    transform: rotateY(180deg) scaleX(1) scale(2);
+    transform: rotateY(180deg);
+    /* transform: rotateY(180deg) scaleX(1) scale(2); */
   }
 }
 

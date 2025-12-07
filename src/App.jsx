@@ -34,9 +34,32 @@ function App() {
     { name: "Hobbies", src: hobbies },
   ];
   const cardDataDesigns = [
-    { name: `"Live It Learn It" Logo Design`, src: liliLogo },
-    { name: "Animation Club Merch Design", src: shirtMerch },
-    { name: "Cat Care Indie Game Design", src: catCareIcon },
+    {
+      name: `"Live It Learn It" Logo Design`,
+      src: liliLogo,
+      link: "https://www.liveitlearnit.org/honor-roll",
+      description: `Live It Learn It (LILI) is an educational organization in Washington D.C. with a goal to rejuvenize education so children will attentively learn in accessible environments.
+      
+I was tasked to design a logo with a distinct identity for recurring supporters. They wanted a new logo as a branch without the design deviating too far from their main logo.`,
+    },
+    {
+      name: "Animation Club Merch Design",
+      src: shirtMerch,
+      // link: "https://christiantoportfolio.wixsite.com/workportfolio/animeclub",
+      description: `DESIGNED MERCHANDISE
+      
+My design was chosen and made into merchandise for the Animation/Anime Club. It was narrowed down to the top 3, where the members voted in a poll. There were around 40 participants; 36 shown and the rest were final decisions by the board.`,
+    },
+    {
+      name: "Cat Care Indie Game Design",
+      src: catCareIcon,
+      link: "https://fallgazer.itch.io/cat-care",
+      figma:
+        "https://www.figma.com/design/ORQNi57R9UxWCZ3EBxRnNr/CatGame?node-id=0-1&p=f&t=2LhkYfuAhXvLuLB0-0",
+      description: `I found a proactive group of people to work on an indie game together. The team has a main gameplay developer (Pratiksha Prakash) and a main artist (me).
+
+I initiated the project, designed the gameplay concept, and created most of the artwork.`,
+    },
   ];
   const animateCameraTo = (newCamPos, newTarget) => {
     if (!controlsRef.current) return;
