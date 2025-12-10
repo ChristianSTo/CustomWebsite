@@ -1,7 +1,13 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../blocks/recipe.css";
 import SiteInfo from "./SiteInfo";
-function Recipe({ recipeImage, recipeName, recipeLink, recipeDescription }) {
+function Recipe({
+  recipeImage,
+  recipeName,
+  recipeLink,
+  recipeGitHub,
+  recipeDescription,
+}) {
   const [openInfo, setOpenInfo] = useState(false);
 
   const toggleSiteInfo = () => {
@@ -27,6 +33,7 @@ function Recipe({ recipeImage, recipeName, recipeLink, recipeDescription }) {
           recipeImage={recipeImage}
           recipeName={recipeName}
           recipeLink={recipeLink}
+          recipeGitHub={recipeGitHub}
           recipeDescription={recipeDescription}
           toggleSiteInfo={toggleSiteInfo}
         />

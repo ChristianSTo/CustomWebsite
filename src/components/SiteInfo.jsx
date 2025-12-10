@@ -4,6 +4,7 @@ function SiteInfo({
   recipeImage,
   recipeName,
   recipeLink,
+  recipeGitHub,
   recipeDescription,
   toggleSiteInfo,
 }) {
@@ -20,6 +21,15 @@ function SiteInfo({
           <a className="site-info__button" href={recipeLink} target="_blank">
             Visit Site ➔
           </a>
+          {recipeGitHub && (
+            <a
+              className="site-info__button"
+              href={recipeGitHub}
+              target="_blank"
+            >
+              View GitHub Repo ➔
+            </a>
+          )}
           <button className="site-info__button" onClick={toggleSiteInfo}>
             Back ↺
           </button>

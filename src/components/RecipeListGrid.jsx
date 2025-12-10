@@ -7,6 +7,7 @@ import chicagoNews from "../assets/images/chicagoNews.png";
 import parksSparks from "../assets/images/parksSparks.png";
 import helpingHands from "../assets/images/helpingHands.png";
 import communiteeGolf from "../assets/images/communiteeGolf.png";
+import newCastle from "../assets/images/newCastle.png";
 function RecipeList() {
   const recipes = [
     {
@@ -20,6 +21,7 @@ function RecipeList() {
       image: communiteeGolf,
       name: `Communitee Golf (Externship)`,
       link: "https://github.com/tripleten-externships/communitee-golf-1",
+      github: "https://github.com/tripleten-externships/communitee-golf-1",
       description: `A Google Chrome Extension that allows members to easily communicate.
 
 • Developed a dynamic messaging menu with TypeScript enabling users to filter conversations by location, view sender details, preview messages, and seamlessly transition to direct messaging.
@@ -33,6 +35,7 @@ function RecipeList() {
       image: chicagoNews,
       name: "Tidings from Chicago (MVP Concept)",
       link: "https://christiansto.github.io/ChristianSTo-se-final-project/",
+      github: "https://github.com/ChristianSTo/ChristianSTo-se_final_project",
       description: `A Chicago news website where users can search and save articles from third party API, NewsApi.
 
 • Built a search interface using React.js, CSS, and HTML, enabling users to efficiently search.
@@ -46,6 +49,7 @@ function RecipeList() {
       image: helpingHands,
       name: "Project Helping Hands (Code Jam)",
       link: "https://christiansto.github.io/CTo-November-Code-Jam-2024/",
+      github: "https://github.com/ChristianSTo/CTo-November-Code-Jam-2024",
       description: `Connects individuals and families with essential resources through local partnerships.
 
 • Taught teammates React.js, Git branches, branch merging to magnify collaboration, productivity and communication.
@@ -59,9 +63,22 @@ function RecipeList() {
       image: parksSparks,
       name: "Parks Sparks (Code Jam)",
       link: "https://rpinkha.github.io/June-Code-Jam-2024/",
+      github: "https://github.com/RPinkha/June-Code-Jam-2024",
       description: `Park Sparks provides the optimal route to the most popular national parks, providing travelers with the shortest and most efficient pathway for their summer adventure. 
 
 Using advanced algorithms for geospatial analysis, data visualizations, and a user-friendly webpage, we ensure that you reach your destination quickly.`,
+    },
+    {
+      image: newCastle,
+      name: "NewCastle Homeloans (CMS Intern)",
+      link: "https://www.newcastle.loans/",
+      github: "",
+      description: `Managed body and image content to proactively update website information by monitoring the HubSpot dashboard.
+
+Optimized content quality and performance to increase visibility through better-targeted content by researching and analyzing keywords using Google Analytics and Ubersuggest.
+
+Restored and organized over 1,000 assets to enhance content management efficiency and accessibility by managing content, folders, links, and blogs with HubSpot.
+      `,
     },
   ];
 
@@ -71,10 +88,11 @@ Using advanced algorithms for geospatial analysis, data visualizations, and a us
         {recipes.map((recipe, index) => {
           return (
             <Recipe
-              key={index}
+              key={recipe.name}
               recipeImage={recipe.image}
               recipeName={recipe.name}
               recipeLink={recipe.link}
+              recipeGitHub={recipe.github}
               recipeDescription={recipe.description}
             />
           );

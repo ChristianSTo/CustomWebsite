@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import CircleCarousel from "./components/CircleCarousel";
 import Grid from "./components/Grid";
 import Header from "./components/Header";
+import About from "./components/About";
 import Glasses from "./Glasses";
 import ControlLogger from "./ControlLogger"; // Import the new logger
 import education from "./assets/images/education.png";
@@ -30,7 +31,7 @@ function App() {
   const cardDataAbout = [
     { name: "Skills", src: skills },
     { name: "Education", src: education },
-    { name: "Passions", src: passions },
+    // { name: "Passions", src: passions },
     { name: "Hobbies", src: hobbies },
   ];
   const cardDataDesigns = [
@@ -250,7 +251,14 @@ cameraX: "1.646", cameraY: "-1.386", cameraZ: "5.756", targetX: "0.149", targetY
         <></>
       )}
       {isWebsites ? <Hero /> : <></>}
-      {isAbout ? <Grid cardData={cardDataAbout} /> : <></>}
+      {isAbout ? (
+        <>
+          <About />
+          {/* <Grid cardData={cardDataAbout} /> */}
+        </>
+      ) : (
+        <></>
+      )}
     </div>
   );
 }
