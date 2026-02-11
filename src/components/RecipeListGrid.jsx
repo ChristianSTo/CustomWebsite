@@ -8,6 +8,7 @@ import parksSparks from "../assets/images/parksSparks.png";
 import helpingHands from "../assets/images/helpingHands.png";
 import communiteeGolf from "../assets/images/communiteeGolf.png";
 import newCastle from "../assets/images/newCastle.png";
+import ouinvest from "../assets/images/ouinvest.png";
 function RecipeList() {
   const recipes = [
     {
@@ -16,6 +17,13 @@ function RecipeList() {
       link: "https://www.maisonbezalel.com/",
       description:
         "Maison Bezalel offers specialized advisory across distinct real estate sectors, ensuring every client receives focused expertise and exceptional service.\n\nMy role was to design and develop a new website for the real estate agent. I used Figma to design the wireframes and assets. I developed with HTML, CSS and JS, while connecting the site to HubSpot to manage content and allow the users to message or meet the agent",
+    },
+    {
+      image: ouinvest,
+      name: "OUInvest (Work Contract)",
+      link: "https://ouinvest.ai/",
+      description:
+        "From AI-powered insights to community support, OUInvest is building the ultimate platform for modern investors who want to grow their wealth with purpose.\n\nMy role was to design the UI/UX of the Website and its Dashboard. I collaborated with the founder, UX team, and dev team to ensure the brand, design and features were reflective of the start-up's vision for its users.",
     },
     {
       image: communiteeGolf,
