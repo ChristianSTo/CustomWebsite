@@ -26,6 +26,18 @@ function RecipeList() {
         "From AI-powered insights to community support, OUInvest is building the ultimate platform for modern investors who want to grow their wealth with purpose.\n\nMy role was to design the UI/UX of the Website and its Dashboard. I collaborated with the founder, UX team, and dev team to ensure the brand, design and features were reflective of the start-up's vision for its users.",
     },
     {
+      image: newCastle,
+      name: "NewCastle Homeloans (CMS Intern)",
+      link: "https://www.newcastle.loans/",
+      github: "",
+      description: `Managed body and image content to proactively update website information by monitoring the HubSpot dashboard.
+
+Optimized content quality and performance to increase visibility through better-targeted content by researching and analyzing keywords using Google Analytics and Ubersuggest.
+
+Restored and organized over 1,000 assets to enhance content management efficiency and accessibility by managing content, folders, links, and blogs with HubSpot.
+      `,
+    },
+    {
       image: communiteeGolf,
       name: `Communitee Golf (Externship)`,
       link: "https://github.com/tripleten-externships/communitee-golf-1",
@@ -75,18 +87,6 @@ function RecipeList() {
       description: `Park Sparks provides the optimal route to the most popular national parks, providing travelers with the shortest and most efficient pathway for their summer adventure. 
 
 Using advanced algorithms for geospatial analysis, data visualizations, and a user-friendly webpage, we ensure that you reach your destination quickly.`,
-    },
-    {
-      image: newCastle,
-      name: "NewCastle Homeloans (CMS Intern)",
-      link: "https://www.newcastle.loans/",
-      github: "",
-      description: `Managed body and image content to proactively update website information by monitoring the HubSpot dashboard.
-
-Optimized content quality and performance to increase visibility through better-targeted content by researching and analyzing keywords using Google Analytics and Ubersuggest.
-
-Restored and organized over 1,000 assets to enhance content management efficiency and accessibility by managing content, folders, links, and blogs with HubSpot.
-      `,
     },
   ];
 
