@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../blocks/circle.css";
 
-function Circle({ circleImage, order, number }) {
+function Circle({ circleImage, order, circleAlt, number }) {
   const circleRef = useRef(null);
   const [circleStyle, setCircleStyle] = useState({
     backgroundImage: `url(${circleImage})`,
@@ -41,7 +41,12 @@ function Circle({ circleImage, order, number }) {
   }, [order]);
 
   return (
-    <div ref={circleRef} className={`circle`} style={circleStyle}>
+    <div
+      ref={circleRef}
+      className={`circle`}
+      style={circleStyle}
+      alt={circleAlt}
+    >
       {/* <p>{number}</p> */}
       <div></div>
     </div>

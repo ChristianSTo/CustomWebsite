@@ -30,15 +30,15 @@ function Header({
         <div className="header__hero">
           {isArtwork ? (
             <h1 className="header__title" style={headerStyle}>
-              Designs.
+              Visual Arts.
             </h1>
           ) : isWebsites ? (
             <h1 className="header__title" style={headerStyle}>
-              Websites.
+              Featured Work.
             </h1>
           ) : isAbout ? (
             <h1 className="header__title" style={headerStyle}>
-              About.
+              About Me.
             </h1>
           ) : (
             <h1 className="header__title header__menu" style={headerStyle}>
@@ -68,10 +68,10 @@ function Header({
           ) : (
             <div className="header__selections">
               <button className="header__button" onClick={websitesHandler}>
-                Websites
+                Featured
               </button>
               <button className="header__button" onClick={artworkHandler}>
-                Designs
+                Visual Arts
               </button>
               <button className="header__button" onClick={aboutHandler}>
                 About

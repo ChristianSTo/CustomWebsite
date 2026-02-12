@@ -18,20 +18,20 @@ import udon from "../assets/images/udon.png";
 
 function CircleCarousel() {
   const circles = [
-    { name: avacadoToast },
-    { name: burger },
-    { name: ebiTempura },
-    { name: icecream },
-    { name: kebabs },
-    { name: muShu },
-    { name: mussels },
-    { name: onigiri },
-    { name: pancakes },
-    { name: shrimpCocktail },
-    { name: springRolls },
-    { name: steak },
-    { name: tofu },
-    { name: udon },
+    { name: avacadoToast, alt: "avacadoToast" },
+    { name: burger, alt: "burger" },
+    { name: ebiTempura, alt: "ebiTempura" },
+    { name: icecream, alt: "icecream" },
+    { name: kebabs, alt: "kebabs" },
+    { name: muShu, alt: "muShu" },
+    { name: mussels, alt: "mussels" },
+    { name: onigiri, alt: "onigiri" },
+    { name: pancakes, alt: "pancakes" },
+    { name: shrimpCocktail, alt: "shrimpCocktail" },
+    { name: springRolls, alt: "springRolls" },
+    { name: steak, alt: "steak" },
+    { name: tofu, alt: "tofu" },
+    { name: udon, alt: "udon" },
   ];
   const totalCircles = circles.length;
   const carouselRef = useRef(null);
@@ -68,6 +68,7 @@ function CircleCarousel() {
             <li key={index} className="circle__item">
               <Circle
                 circleImage={circle.name}
+                circleAlt={circle.alt}
                 order={circleOrder}
                 number={index + 1}
               />
