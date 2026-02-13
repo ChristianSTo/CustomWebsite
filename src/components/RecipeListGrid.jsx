@@ -23,7 +23,7 @@ function RecipeList() {
       name: "OUInvest (Work Contract)",
       link: "https://ouinvest.ai/",
       description:
-        "From AI-powered insights to community support, OUInvest is building the ultimate platform for modern investors who want to grow their wealth with purpose.\n\nMy role was to design the UI/UX of the Website and its Dashboard. I collaborated with the founder, UX team, and dev team to ensure the brand, design and features were reflective of the start-up's vision for its users.",
+        "From AI-powered insights to community support, OUInvest is building the ultimate platform for modern investors who want to grow their wealth with purpose.\n\nMy role was to design the UI/UX of the Website and its Dashboard. I collaborated with the founder, UX team, and dev team to ensure the brand, design and features were reflective of the start-up's vision for its users. The current app is in development, where I was part of the starting MVP team and passed down my designs and ideas for OUInvest to use in the future.",
     },
     {
       image: newCastle,
