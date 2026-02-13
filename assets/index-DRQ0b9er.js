@@ -3783,7 +3783,9 @@ No matching component was found for:
 
 My role was to design and develop a new website for the real estate agent. I used Figma to design the wireframes and assets. I developed with HTML, CSS and JS, while connecting the site to HubSpot to manage content and allow the users to message or meet the agent`},{image:T9,name:"OUInvest (Work Contract)",link:"https://ouinvest.ai/",description:`From AI-powered insights to community support, OUInvest is building the ultimate platform for modern investors who want to grow their wealth with purpose.
 
-My role was to design the UI/UX of the Website and its Dashboard. I collaborated with the founder, UX team, and dev team to ensure the brand, design and features were reflective of the start-up's vision for its users. The current app is in development, where I was part of the starting MVP team and passed down my designs and ideas for OUInvest to use in the future.`},{image:C9,name:"NewCastle Homeloans (CMS Intern)",link:"https://www.newcastle.loans/",github:"",description:`Managed body and image content to proactively update website information by monitoring the HubSpot dashboard.
+My role was to design the UI/UX of the Website and its Dashboard. I collaborated with the founder, UX team, and dev team to ensure the brand, design and features were reflective of the start-up's vision for its users.
+
+The current app is in development, where I was part of the starting MVP team and passed down my designs and ideas for OUInvest to use in the future.`},{image:C9,name:"NewCastle Homeloans (CMS Intern)",link:"https://www.newcastle.loans/",github:"",description:`Managed body and image content to proactively update website information by monitoring the HubSpot dashboard.
 
 Optimized content quality and performance to increase visibility through better-targeted content by researching and analyzing keywords using Google Analytics and Ubersuggest.
 
