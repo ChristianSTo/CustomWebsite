@@ -34,7 +34,7 @@ function Header({
             </h1>
           ) : isWebsites ? (
             <h1 className="header__title" style={headerStyle}>
-              Featured Work.
+              Featured.
             </h1>
           ) : isAbout ? (
             <h1 className="header__title" style={headerStyle}>
