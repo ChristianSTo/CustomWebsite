@@ -36,6 +36,13 @@
   min-width: 350px;
 }
 
+.site_info__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
 .site-info__nav {
   display: flex;
   flex-direction: column;

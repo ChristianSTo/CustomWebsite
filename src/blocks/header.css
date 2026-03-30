@@ -56,7 +56,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 150px auto 0px;
+  margin: 160px auto 0px;
   gap: 25px;
 }
 
@@ -79,20 +79,33 @@
   display: flex;
   flex-direction: column;
   gap: 0px;
-  margin-top: 150px;
+  margin-top: 140px;
   color: #000;
+}
+
+.header__cta-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 100% 0% 100% 0%;
+  gap: 10px;
+  margin: 0px auto;
+  padding: 5px 25px;
+  width: 100%;
+  max-width: 200px;
 }
 
 .header__cta-text {
   font-family: "Trebuchet MS", "sans-serif";
   font-size: 14px;
-  margin: 0px;
-  padding: 0px;
 }
+
 .header__cta-icon {
   font-family: "Trebuchet MS", "sans-serif";
-  font-size: 50px;
-  margin: 0px;
+  font-size: 20px;
+  margin: 0px 0px 0px;
   padding: 0px;
   animation: floating 0.3s alternate infinite;
 }

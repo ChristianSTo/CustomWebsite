@@ -6,11 +6,11 @@ import * as THREE from "three";
 const BowlLitMaterial = shaderMaterial(
   {
     // Color Uniforms FF8576
-    uLitColor: new THREE.Color("#FFA092"),
-    uShadeColor: new THREE.Color("#FF8576"),
+    // uLitColor: new THREE.Color("#FFA092"),
+    // uShadeColor: new THREE.Color("#FF8576"),
     uHighlightColor: new THREE.Color("#FFFFFF"),
-    // uLitColor: new THREE.Color("#1e1e1e"),
-    // uShadeColor: new THREE.Color("#000"),
+    uLitColor: new THREE.Color("#1e1e1e"),
+    uShadeColor: new THREE.Color("#000"),
     // uHighlightColor: new THREE.Color("#FFFFFF"),
     // Lighting Uniforms
     lightPos: new THREE.Vector3(1, 1, 1),

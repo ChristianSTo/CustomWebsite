@@ -81,8 +81,10 @@ function Header({
 
           {isArtwork || isWebsites || isAbout ? (
             <div className="header__cta" style={headerStyle}>
-              <p className="header__cta-text">explore below</p>
-              <p className="header__cta-icon">﹀</p>
+              <div className="header__cta-container">
+                <p className="header__cta-text">scroll to explore</p>
+                <p className="header__cta-icon">﹀</p>
+              </div>
             </div>
           ) : (
             <></>
