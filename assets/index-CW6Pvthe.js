@@ -3785,7 +3785,7 @@ My role was to design and develop a new website for the real estate agent. I use
 
 My role was to design the UI/UX of the Website and its Dashboard. I collaborated with the founder, UX team, and dev team to ensure the brand, design and features were reflective of the start-up's vision for its users.
 
-The current app is in development, where I was part of the starting MVP team and passed down my designs and ideas for OUInvest to use in the future.`,gallery:[b9,R9]},{image:C9,name:"NewCastle Homeloans (CMS Intern)",link:"https://www.newcastle.loans/",github:"",description:`Managed body and image content to proactively update website information by monitoring the HubSpot dashboard.
+*The current app is in development, where I was part of the starting MVP team and passed down my designs and ideas for OUInvest to use in the future.*`,gallery:[b9,R9]},{image:C9,name:"NewCastle Homeloans (CMS Intern)",link:"https://www.newcastle.loans/",github:"",description:`Managed body and image content to proactively update website information by monitoring the HubSpot dashboard.
 
 Optimized content quality and performance to increase visibility through better-targeted content by researching and analyzing keywords using Google Analytics and Ubersuggest.
 
